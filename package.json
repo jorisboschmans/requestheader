@@ -1,0 +1,14 @@
+{
+  "name": "requestheader",
+  "version": "1.0.0",
+  "description": "Responds a JSON object stating your ip address, language and software.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joris Boschmans",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
