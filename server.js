@@ -2,7 +2,9 @@ var app = require("express")();
 
 app.get("/api/whoami", function(req, res){
 	res.end(JSON.stringify({
-		ipaddress: req.connection.remoteAddress.match(/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/)[0]
+		ipaddress: req.ip.match(/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/)[0],
+		language: null,
+		software: null
 	}));
 });
 
